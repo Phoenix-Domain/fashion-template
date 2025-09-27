@@ -1,14 +1,287 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/css/style.css">
-    <title>Fashion Store Template</title>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope:wght@400;500;700;800&amp;family=Playfair+Display:wght@400;700;900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#c0a080",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#0a0a0a",
+                        "surface-dark": "#1a1a1a",
+                    },
+                    fontFamily: {
+                        display: ["Playfair Display", "serif"],
+                        sans: ["Manrope", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.25rem",
+                        lg: "0.5rem",
+                        xl: "0.75rem",
+                        full: "9999px"
+                    },
+                },
+            },
+        };
+    </script>
 </head>
-<body>
-    <header>
-        <nav></nav>
-    </header>
-</body>
-</html>
+<body class="bg-background-light dark:bg-background-dark font-sans text-white/80">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-white/10 px-10 py-5">
+<div class="flex items-center gap-3 text-white">
+<div class="size-8 text-primary">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 18.4228L42 11.475V34.3663C42 34.7796 41.7457 35.1504 41.3601 35.2992L24 42V18.4228Z" fill="currentColor" fill-rule="evenodd"></path>
+<path clip-rule="evenodd" d="M24 8.18819L33.4123 11.574L24 15.2071L14.5877 11.574L24 8.18819ZM9 15.8487L21 20.4805V37.6263L9 32.9945V15.8487ZM27 37.6263V20.4805L39 15.8487V32.9945L27 37.6263ZM25.354 2.29885C24.4788 1.98402 23.5212 1.98402 22.646 2.29885L4.98454 8.65208C3.7939 9.08038 3 10.2097 3 11.475V34.3663C3 36.0196 4.01719 37.5026 5.55962 38.098L22.9197 44.7987C23.6149 45.0671 24.3851 45.0671 25.0803 44.7987L42.4404 38.098C43.9828 37.5026 45 36.0196 45 34.3663V11.475C45 10.2097 44.2061 9.08038 43.0155 8.65208L25.354 2.29885Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-2xl font-bold tracking-wider font-display text-white">Luxe Threads</h2>
+</div>
+<nav class="hidden md:flex items-center gap-10 text-sm font-medium text-white/60">
+<a class="hover:text-primary transition-colors" href="#">New Arrivals</a>
+<a class="hover:text-primary transition-colors" href="#">Women</a>
+<a class="hover:text-primary transition-colors" href="#">Men</a>
+<a class="hover:text-primary transition-colors" href="#">Accessories</a>
+<a class="hover:text-primary transition-colors" href="#">Sale</a>
+</nav>
+<div class="flex items-center gap-3">
+<button class="flex h-10 w-10 cursor-pointer items-center justify-center overflow-hidden rounded-full border border-white/10 text-white hover:bg-white/5 transition-colors">
+<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+</svg>
+</button>
+<button class="flex h-10 w-10 cursor-pointer items-center justify-center overflow-hidden rounded-full border border-white/10 text-white hover:bg-white/5 transition-colors">
+<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z"></path>
+</svg>
+</button>
+<button class="flex h-10 w-10 cursor-pointer items-center justify-center overflow-hidden rounded-full border border-white/10 text-white hover:bg-white/5 transition-colors">
+<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,160H40V56H216V200ZM176,88a48,48,0,0,1-96,0,8,8,0,0,1,16,0,32,32,0,0,0,64,0,8,8,0,0,1,16,0Z"></path>
+</svg>
+</button>
+</div>
+</header>
+<main class="flex-1">
+<div class="relative">
+<div class="absolute inset-0 bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAdwT8BLnKHEPdsb9MuvTnPDIQHvqwhHGuvFICs5XXIAqCg-OWN-NZb5uAHr45ESAHFDFu1CGoDgQNa9ChWdN1VTpYUu2iHlXSX3lwsJlZtpPOsCKCGX8vrRTiiZGvuuxbEvEoTv1dk9xSm4uA3NHdLmiuGOV-br3Kaevfas4xUbRQBLY-weVSH7yGD15f24CCOa8CTslSOFxsocCx9J6dmD6b3qd0cvG2kQg6UgixqWU4jdm0Kv_zHcEdAs-lZbu2ePXy0iQVgWKs");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/50 to-transparent"></div>
+<div class="relative flex min-h-[600px] flex-col items-center justify-end p-8 sm:p-12 text-white text-center">
+<div class="flex flex-col gap-4 max-w-2xl">
+<h1 class="text-5xl md:text-7xl font-extrabold font-display tracking-tight">Elevate Your Style</h1>
+<p class="text-base md:text-lg text-white/70 font-sans">Discover the latest trends and timeless pieces that define your unique fashion statement.</p>
+</div>
+<button class="mt-8 flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-8 bg-primary text-white text-base font-bold tracking-wide hover:opacity-90 transition-opacity">
+<span>Shop Now</span>
+</button>
+</div>
+</div>
+<section class="py-24 bg-surface-dark/50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<h2 class="text-4xl font-bold font-display tracking-tight text-white text-center mb-12">Featured Collections</h2>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+<div class="relative rounded-lg overflow-hidden h-[600px] group">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA9kvfQUHHCZBPm--_dsDxpF23ZR1bsUZJl89MLduMFNhEENScIFD_GczivLX9uQRUYzO695Q6JUXUrWCBZNBayFguF_8xS6iQfvdrWMcJXzw_aATyC25UXtefuf86xYyIWR76wXdD25VL16TIrLHP4t9bhKnf06XuOnqnkFyYtNJaaZTRBw6qO6OIdm8Qmm3p4XlNMZ9GDWu18WWFz6RnWEisGLtGraADFf5kQP7OmKm45UF2S0lCAOHphCXiYF9GBjLIRLR1kWuo");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<h3 class="text-3xl font-bold font-display text-white">Urban Elegance</h3>
+<p class="text-white/80 mt-2">Sophisticated city styles for the modern individual.</p>
+<a class="mt-4 inline-block text-primary font-semibold hover:underline" href="#">Explore Collection</a>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="relative rounded-lg overflow-hidden h-[284px] group">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCMAttZz3MogwaYD85PXwcsAoOooXHRRgJsH1fPqwSuxjFjGNlahJrQGTos7eOYvdseffmiNU6n31m_Y7kYKQ0f44EGJafprfe988W6Cc-AuRmzcUP8uVTco4_39shCPss1Z-GLOXGvkZy41lEkkqy-OXMGboNo0EJqsM1oEz_moVPGUGIb12Q2nfHuSXBurJLvExESqz79n4VRrQCKB8QDNLT_nBG47SaYLNXasEYsqjJ7YMf43-VFy8aDMDiBD3T54OZMDi4V7v0");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6">
+<h3 class="text-2xl font-bold font-display text-white">Weekend Casual</h3>
+<a class="mt-2 inline-block text-primary font-semibold hover:underline text-sm" href="#">Shop Now</a>
+</div>
+</div>
+<div class="relative rounded-lg overflow-hidden h-[284px] group">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-500 group-hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCIBOIO4r2yCui5K8JM2_-tJKgXg0ZrE9Vmx0jSjI0DO4jtuXZ9LuSwHTv0fJCE3CIZIqiF1qi-8ymDQX0Ntj0iexnWZhfpRLqfpEz5RDlqGd3mlIyTPBdKrf5u4yIvhNFK_VFe6Ph1RW9Ga9J3VvvF-pqNDvw679gxH3-uS5WS2jk6B48L5y9ooTm8jOmZPJdOp6JRX4LE4hJXIvcpSaYLf_mI9XcKDHp3aSX1N7Kzdl5XeX0oBbgV_cGCkJy8A6hPgD08fho0tCo");'></div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+<div class="absolute bottom-0 left-0 p-6">
+<h3 class="text-2xl font-bold font-display text-white">Formal Attire</h3>
+<a class="mt-2 inline-block text-primary font-semibold hover:underline text-sm" href="#">Shop Now</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center">
+<h2 class="text-4xl font-bold font-display tracking-tight text-white">Designer Spotlight</h2>
+<p class="mt-4 text-lg text-white/70 max-w-2xl mx-auto">Celebrating the visionaries behind the craft, blending tradition with contemporary design.</p>
+</div>
+<div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
+<div class="text-center">
+<div class="w-48 h-48 rounded-full mx-auto overflow-hidden border-4 border-surface-dark">
+<img alt="Designer Portrait" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCY0_E2qQeYh8o2P42s788W3890hC69w6eJ5nK_S4R2Hj7_z_f-2x1xSg5-p5fXw8zXn5g5-s8r5-gSg3sF_xH-f_Xw_xH_w8-gSg3sF_xH-f_Xw_xH_w8-gSg3sF_xH-f_Xw_xH_w8-gSg3sF_xH-f_Xw_xH_w8-gSg3sF_xH-f_Xw_xH_w8-gSg3sF_xH-f_Xw"/>
+</div>
+<h3 class="mt-6 text-2xl font-display font-semibold text-white">Isabella Rossi</h3>
+<p class="text-primary mt-1">Lead Couturier</p>
+<p class="text-white/60 mt-3 max-w-xs mx-auto">Isabella's designs are a testament to timeless elegance, weaving classic silhouettes with a modern twist.</p>
+</div>
+<div class="text-center">
+<div class="w-48 h-48 rounded-full mx-auto overflow-hidden border-4 border-surface-dark">
+<img alt="Designer Portrait" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7c0C0Qc9u0-f2c6-h8o2-f4s7-8w3-8g9-jC6-6-g6-nK_S4-j7_z_f-2-x1-Sg5-p5-fXw8-Xn5-g5-s8-r5-gSg3-sF_x-H-f_X-w_xH_w8-gSg3-sF_x-H-f_X-w_xH_w8-gSg3-sF_x-H-f_X-w_xH_w8-gSg3-sF_x-H-f_X-w_xH_w8-gSg3-sF_x-H-f_X"/>
+</div>
+<h3 class="mt-6 text-2xl font-display font-semibold text-white">Kenji Tanaka</h3>
+<p class="text-primary mt-1">Avant-Garde Specialist</p>
+<p class="text-white/60 mt-3 max-w-xs mx-auto">Kenji pushes boundaries, creating avant-garde pieces that are both art and fashion.</p>
+</div>
+<div class="text-center">
+<div class="w-48 h-48 rounded-full mx-auto overflow-hidden border-4 border-surface-dark">
+<img alt="Designer Portrait" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2d_f_2-c6-q-h8-g2-f4-7-8-w3-8-g9-jC6-6-g6-nK_S4-j7_z_f-2-x1-Sg5-p5-fXw8-Xn5-g5-s8-r5-gSg3-sF_x-H-f_X-w_xH_w8-gSg3-sF_x-H-f_X-w_xH_w8-gSg3-sF_x-H-f_X-w_xH_w8-gSg3-sF_x-H-f_X-w_xH_w8-gSg3-sF_x-H-f_X"/>
+</div>
+<h3 class="mt-6 text-2xl font-display font-semibold text-white">Amina Elara</h3>
+<p class="text-primary mt-1">Textile Innovator</p>
+<p class="text-white/60 mt-3 max-w-xs mx-auto">Amina's expertise in textiles brings unique textures and sustainable fabrics to the forefront of fashion.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-surface-dark/50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<h2 class="text-4xl font-bold font-display tracking-tight text-white text-center mb-12">What Our Clients Say</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-background-dark p-8 rounded-lg border border-white/10">
+<div class="flex items-center mb-4">
+<div class="text-primary">
+<svg fill="currentColor" height="32" viewBox="0 0 256 256" width="32" xmlns="http://www.w3.org/2000/svg">
+<path d="M116,72v88a48.05,48.05,0,0,1-48,48,8,8,0,0,1,0-16,32,32,0,0,0,32-32v-8H64a48,48,0,0,1-48-48V72a8,8,0,0,1,16,0v24a32,32,0,0,0,32,32h32V72a8,8,0,0,1,16,0Zm112,0v88a48.05,48.05,0,0,1-48,48,8,8,0,0,1,0-16,32,32,0,0,0,32-32v-8h-36a48,48,0,0,1-48-48V72a8,8,0,0,1,16,0v24a32,32,0,0,0,32,32h32V72a8,8,0,0,1,16,0Z"></path>
+</svg>
+</div>
+</div>
+<p class="text-white/80 font-sans italic">"The quality and craftsmanship are unparalleled. Every piece feels like it was made just for me. Truly a luxurious experience."</p>
+<p class="text-white font-semibold mt-6">- Olivia Chen</p>
+</div>
+<div class="bg-background-dark p-8 rounded-lg border border-white/10">
+<div class="flex items-center mb-4">
+<div class="text-primary">
+<svg fill="currentColor" height="32" viewBox="0 0 256 256" width="32" xmlns="http://www.w3.org/2000/svg">
+<path d="M116,72v88a48.05,48.05,0,0,1-48,48,8,8,0,0,1,0-16,32,32,0,0,0,32-32v-8H64a48,48,0,0,1-48-48V72a8,8,0,0,1,16,0v24a32,32,0,0,0,32,32h32V72a8,8,0,0,1,16,0Zm112,0v88a48.05,48.05,0,0,1-48,48,8,8,0,0,1,0-16,32,32,0,0,0,32-32v-8h-36a48,48,0,0,1-48-48V72a8,8,0,0,1,16,0v24a32,32,0,0,0,32,32h32V72a8,8,0,0,1,16,0Z"></path>
+</svg>
+</div>
+</div>
+<p class="text-white/80 font-sans italic">"Luxe Threads has completely transformed my wardrobe. Their collections are both trendy and timeless. I always find something special."</p>
+<p class="text-white font-semibold mt-6">- James Carter</p>
+</div>
+<div class="bg-background-dark p-8 rounded-lg border border-white/10">
+<div class="flex items-center mb-4">
+<div class="text-primary">
+<svg fill="currentColor" height="32" viewBox="0 0 256 256" width="32" xmlns="http://www.w3.org/2000/svg">
+<path d="M116,72v88a48.05,48.05,0,0,1-48,48,8,8,0,0,1,0-16,32,32,0,0,0,32-32v-8H64a48,48,0,0,1-48-48V72a8,8,0,0,1,16,0v24a32,32,0,0,0,32,32h32V72a8,8,0,0,1,16,0Zm112,0v88a48.05,48.05,0,0,1-48,48,8,8,0,0,1,0-16,32,32,0,0,0,32-32v-8h-36a48,48,0,0,1-48-48V72a8,8,0,0,1,16,0v24a32,32,0,0,0,32,32h32V72a8,8,0,0,1,16,0Z"></path>
+</svg>
+</div>
+</div>
+<p class="text-white/80 font-sans italic">"The customer service is as impeccable as their clothing. Fast shipping and beautiful packaging. A top-tier online boutique."</p>
+<p class="text-white font-semibold mt-6">- Sophia Lorenzi</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<h2 class="text-4xl font-bold font-display tracking-tight text-white text-center mb-12">From Our Blog</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="flex flex-col gap-4 group">
+<div class="overflow-hidden rounded-lg">
+<a class="block" href="#">
+<div class="w-full h-64 bg-cover bg-center rounded-lg transition-transform duration-500 group-hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBPxvurj101IqIsKkVhY94hHNyOevJfPyMhCV6-rAgIEmVfW5Beuh2SEAg7uIChucUO1QnVsfZM-aVpNsOdvhifU_fRHuce27QBoCZ9fc_5-5NCg0F-2wYrQUpxE6ZvpOh6lTsQCiVcw0KeGDt0fVbA5h2-w-5nl_ULhMg6wsdQcdqm8Dmo87pJu5FxokHpofNFuMEH0Ixw3W6_lSuF4p4xGyoNNrF3_mE-3S9oqwkzxdz9OMN0urez_Xs2ju7E4SNkZjHTNYlMFrM");'></div>
+</a>
+</div>
+<div class="flex-1">
+<p class="text-sm text-white/60">May 28, 2024</p>
+<h3 class="text-xl font-semibold font-display text-white mt-2 group-hover:text-primary transition-colors"><a href="#">The Art of Layering: A Guide for All Seasons</a></h3>
+<p class="text-white/70 mt-3 text-sm">Discover how to master the art of layering to create stylish and versatile outfits no matter the weather.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 group">
+<div class="overflow-hidden rounded-lg">
+<a class="block" href="#">
+<div class="w-full h-64 bg-cover bg-center rounded-lg transition-transform duration-500 group-hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBjKkxUNQ2kacjHtaq0IdCfBFzLNfatAZQ-Y8kQq7YgXKYLuZrmxO697FDXlQ_pHhp-YVyK8o5Au4hEhrQhIArCnadqV7dv_cmjWgaotDZgIPSZgAuNzq0_colwCRPat35HNIzXGgOiaNchAozN6tBnSh-v3ir0GdPENuWm7f1qgtfbkpf3AXbArthWJRRbShMJEgQntkNuA0dH1rMJfW2MY1-pZnD0kQiYqLuGnALlfTpAgsH_XxLP9kL6nXWutDF0glp3ikF6e-E");'></div>
+</a>
+</div>
+<div class="flex-1">
+<p class="text-sm text-white/60">May 21, 2024</p>
+<h3 class="text-xl font-semibold font-display text-white mt-2 group-hover:text-primary transition-colors"><a href="#">Sustainable Fashion: Style That Feels Good</a></h3>
+<p class="text-white/70 mt-3 text-sm">Learn about our commitment to sustainability and how you can make more eco-conscious fashion choices.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 group">
+<div class="overflow-hidden rounded-lg">
+<a class="block" href="#">
+<div class="w-full h-64 bg-cover bg-center rounded-lg transition-transform duration-500 group-hover:scale-110" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAuPTa1MBvqDwwysppfVCJ2YNYp0ZI3C9u4u5es-hxGeTp_4xKs7ptIvW4hW81AYB1rrkBnv1ZBw2gYNFxHOXAtFiJZ_mtfT2t1UaTVYElQG-hrBk9KhC2YKmsrmP2T82dqaJscikBiAI1auKw9bnyaZdIiamJUGQa3sOuN5NA5IBxwU4o4lmhzqbnVLpPQaRBgxoob0X257ZPJwGEqWMDakLsd9dmh5BFVleFZyPwu9mZevSM01MGrZjkcrKOrJGIH5bdzUx9OIRI");'></div>
+</a>
+</div>
+<div class="flex-1">
+<p class="text-sm text-white/60">May 14, 2024</p>
+<h3 class="text-xl font-semibold font-display text-white mt-2 group-hover:text-primary transition-colors"><a href="#">Accessorize Like a Pro: The Finishing Touches</a></h3>
+<p class="text-white/70 mt-3 text-sm">From statement jewelry to the perfect handbag, find out how to choose accessories that elevate your look.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-24 bg-surface-dark/50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col items-center gap-4 text-center">
+<h2 class="text-4xl sm:text-5xl font-bold font-display tracking-tight text-white max-w-2xl">Join Our Fashion Community</h2>
+<p class="text-base text-white/60 max-w-xl">Stay updated on the latest trends, exclusive offers, and style tips by subscribing to our newsletter.</p>
+<div class="mt-6 flex gap-2 w-full max-w-md">
+<input class="flex-grow h-12 px-4 rounded-lg bg-white/10 border border-white/20 focus:ring-primary focus:border-primary text-white placeholder-white/50" placeholder="Enter your email" type="email"/>
+<button class="flex-shrink-0 flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-white text-base font-bold tracking-wide hover:opacity-90 transition-opacity">
+<span>Subscribe</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="border-t border-white/10 text-white/50 bg-surface-dark/50">
+<div class="mx-auto max-w-7xl px-5 py-16">
+<div class="flex flex-col md:flex-row items-center justify-between gap-8">
+<div class="flex flex-wrap items-center justify-center gap-x-8 gap-y-4 font-medium">
+<a class="hover:text-primary transition-colors text-sm" href="#">Contact Us</a>
+<a class="hover:text-primary transition-colors text-sm" href="#">Shipping &amp; Returns</a>
+<a class="hover:text-primary transition-colors text-sm" href="#">Privacy Policy</a>
+<a class="hover:text-primary transition-colors text-sm" href="#">Terms of Service</a>
+</div>
+<div class="flex justify-center gap-6">
+<a class="hover:text-primary transition-colors" href="#">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M247.39,68.94A8,8,0,0,0,240,64H209.57A48.66,48.66,0,0,0,168.1,40a46.91,46.91,0,0,0-33.75,13.7A47.9,47.9,0,0,0,120,88v6.09C79.74,83.47,46.81,50.72,46.46,50.37a8,8,0,0,0-13.65,4.92c-4.31,47.79,9.57,79.77,22,98.18a110.93,110.93,0,0,0,21.88,24.2c-15.23,17.53-39.21,26.74-39.47,26.84a8,8,0,0,0-3.85,11.93c.75,1.12,3.75,5.05,11.08,8.72C53.51,229.7,65.48,232,80,232c70.67,0,129.72-54.42,135.75-124.44l29.91-29.9A8,8,0,0,0,247.39,68.94Zm-45,29.41a8,8,0,0,0-2.32,5.14C196,166.58,143.28,216,80,216c-10.56,0-18-1.4-23.22-3.08,11.51-6.25,27.56-17,37.88-32.48A8,8,0,0,0,92,169.08c-.47-.27-43.91-26.34-44-96,16,13,45.25,33.17,78.67,38.79A8,8,0,0,0,136,104V88a32,32,0,0,1,9.6-22.92A30.94,30.94,0,0,1,167.9,56c12.66.16,24.49,7.88,29.44,19.21A8,8,0,0,0,204.67,80h16Z"></path>
+</svg>
+</a>
+<a class="hover:text-primary transition-colors" href="#">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M128,80a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160ZM176,24H80A56.06,56.06,0,0,0,24,80v96a56.06,56.06,0,0,0,56,56h96a56.06,56.06,0,0,0,56-56V80A56.06,56.06,0,0,0,176,24Zm40,152a40,40,0,0,1-40,40H80a40,40,0,0,1-40-40V80A40,40,0,0,1,80,40h96a40,40,0,0,1,40,40ZM192,76a12,12,0,1,1-12-12A12,12,0,0,1,192,76Z"></path>
+</svg>
+</a>
+<a class="hover:text-primary transition-colors" href="#">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm8,191.63V152h24a8,8,0,0,0,0-16H136V112a16,16,0,0,1,16-16h16a8,8,0,0,0,0-16H152a32,32,0,0,0-32,32v24H96a8,8,0,0,0,0,16h24v63.63a88,88,0,1,1,16,0Z"></path>
+</svg>
+</a>
+</div>
+</div>
+<p class="mt-10 text-center text-sm">© 2024 Luxe Threads. All rights reserved.</p>
+</div>
+</footer>
+</div>
+</div>
+
+</body></html>
